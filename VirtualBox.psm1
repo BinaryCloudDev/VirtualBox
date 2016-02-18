@@ -46,6 +46,9 @@ param(
 $vBox.Machines
 }
 
+function Get-Version {
+param()
+$vBox.Version
+}
 
-
-export-modulemember -function Get-VBoxVM
+export-modulemember -function Get-VBoxVM, Get-Version
